@@ -1,0 +1,7 @@
+base   tikzjax
+author Jakub Pelc
+email  admin@swpelc.eu
+date   2025-01-12
+name   TikZJax plugin
+desc   Enables TikZJax (https://tikzjax.com/) parsing of TikZ expressions.
+url    https://www.dokuwiki.org/plugin:tikzjax
