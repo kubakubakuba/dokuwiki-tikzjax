@@ -91,9 +91,8 @@ class syntax_plugin_tikzjax extends DokuWiki_Syntax_Plugin {
             $renderer->doc .= html_entity_decode(htmlspecialchars($data['content']));
         } elseif ($data['state'] === 'exit') {
             $renderer->doc .= '</script>';
-            // Add inline style to increase rendered SVG size
             $renderer->doc .= '<style>
-                svg { width: 100%; height: auto; }
+                svg { width: auto; height: auto; }
             </style>';
         }
 

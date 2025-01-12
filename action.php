@@ -23,12 +23,12 @@ class action_plugin_tikzjax extends DokuWiki_Action_Plugin {
         $event->data['link'][] = [
             'rel' => 'stylesheet',
             'type' => 'text/css',
-            'href' => 'https://tikzjax.com/v1/fonts.css'
+            'href' => DOKU_BASE . 'lib/plugins/tikzjax/lib/fonts.css'
         ];
 
         $event->data['script'][] = [
             'type' => 'text/javascript',
-            'src' => 'https://tikzjax.com/v1/tikzjax.js',
+            'src' => DOKU_BASE . 'lib/plugins/tikzjax/lib/tikzjax.js',
             '_data' => ''
         ];
     }
